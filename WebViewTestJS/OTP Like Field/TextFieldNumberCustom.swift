@@ -116,19 +116,31 @@ extension OneTextNumberTextField: UITextFieldDelegate {
                 textField.text = string
                 
             } else if string.isEmpty || newLength > 1 {
+                
+                let oldString = textField.text ?? ""
                 textField.text = string
-        
+                
                 for textFields in textFieldStack.subviews {
                     
                     if textField == textFields {
                         
-                        if textFields.tag + 1 < textFieldStack.subviews.count {
-                            textFieldStack.subviews[textFields.tag + 1].becomeFirstResponder()
-                            return false
+                        if oldString != "" && string != "" {
+                            if textFields.tag + 1 < textFieldStack.subviews.count {
+                                textFieldStack.subviews[textFields.tag + 1].becomeFirstResponder()
+                                return false
+                            }
+                            
+                        } else {
+                            if textFields.tag - 1 > -1 {
+                                textFieldStack.subviews[textFields.tag - 1].becomeFirstResponder()
+                                return false
+                            }
+                            
                         }
                     }
                 }
                 textField.resignFirstResponder()
+                return false
             }
             
             if newLength == 1 {
