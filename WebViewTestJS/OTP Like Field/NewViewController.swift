@@ -2,7 +2,7 @@
 //  NewViewController.swift
 //  WebViewTestJS
 //
-//  Created by WYH IOS  on 10/05/24.
+//  Created by Rahul Vishwakarma  on 10/05/24.
 //
 
 import UIKit
@@ -123,19 +123,4 @@ extension NewViewController: UITextFieldDelegate, OneTextNumberTextFieldDelegate
         }
         return string == numberFiltered
     }
-}
-
-
-
-extension NewViewController: UITableViewDataSource, UITableViewDelegate {
-    
-    
-
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        
-        
-    }
-    
 }

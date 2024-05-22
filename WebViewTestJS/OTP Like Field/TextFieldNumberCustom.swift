@@ -2,7 +2,7 @@
 //  TextFieldNumberCustom.swift
 //  WebViewTestJS
 //
-//  Created by WYH IOS  on 10/05/24.
+//  Created by Rahul Vishwakarma  on 10/05/24.
 //
 
 import UIKit
@@ -46,26 +46,26 @@ class OneTextNumberTextField: NSObject {
         for i in 0...numberOfField-1 {
             let textfield = StackTextFieldSquare()
         
-//            textfield.backPressed = { [weak self] in
-//
-//                guard let self = self else { return }
-//                for textFields in textFieldStack.subviews {
-//                    if textfield == textFields {
-//
-//                        if (textFields as? UITextField)?.text == "" {
-//                            if (textFields.tag - 1) > (-1) {
-////                                (textFieldStack.subviews[textFields.tag - 1] as? UITextField)?.text = ""
-//                                textFieldStack.subviews[textFields.tag - 1].becomeFirstResponder()
-//                                return
-//                            }
-//                        } else {
-//                            textfield.text = ""
-//                            return
-//                        }
-//                    }
-//                }
-//                textfield.resignFirstResponder()
-//            }
+            textfield.backPressed = { [weak self] in
+
+                guard let self = self else { return }
+                for textFields in textFieldStack.subviews {
+                    if textfield == textFields {
+
+                        if (textFields as? UITextField)?.text == "" {
+                            if (textFields.tag - 1) > (-1) {
+                                (textFieldStack.subviews[textFields.tag - 1] as? UITextField)?.text = ""
+                                textFieldStack.subviews[textFields.tag - 1].becomeFirstResponder()
+                                return
+                            }
+                        } else {
+                            textfield.text = ""
+                            return
+                        }
+                    }
+                }
+                textfield.resignFirstResponder()
+            }
             
             textfield.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint(item: textfield, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1, constant: textFieldWith).isActive = true
@@ -112,9 +112,23 @@ extension OneTextNumberTextField: UITextFieldDelegate {
         
         if string == numberFiltered {
             
-            
-            if !string.isEmpty {
+            if !string.isEmpty && newLength == 1 {
                 textField.text = string
+                
+            } else if string.isEmpty || newLength > 1 {
+                textField.text = string
+        
+                for textFields in textFieldStack.subviews {
+                    
+                    if textField == textFields {
+                        
+                        if textFields.tag + 1 < textFieldStack.subviews.count {
+                            textFieldStack.subviews[textFields.tag + 1].becomeFirstResponder()
+                            return false
+                        }
+                    }
+                }
+                textField.resignFirstResponder()
             }
             
             if newLength == 1 {
@@ -125,19 +139,6 @@ extension OneTextNumberTextField: UITextFieldDelegate {
                         if textFields.tag + 1 < textFieldStack.subviews.count {
                             textFieldStack.subviews[textFields.tag + 1].becomeFirstResponder()
                             return true
-                        }
-                    }
-                }
-                
-                textField.resignFirstResponder()
-            } else {
-                
-                textField.text = ""
-                for textFields in textFieldStack.subviews {
-                    if textField == textFields {
-                        if (textFields.tag - 1) > (-1) {
-                            textFieldStack.subviews[textFields.tag - 1].becomeFirstResponder()
-                            return false
                         }
                     }
                 }
@@ -158,6 +159,13 @@ extension OneTextNumberTextField: UITextFieldDelegate {
             oneTextNumberDelegate?.isAllValueEnterd(flag: true)
         } else {
             oneTextNumberDelegate?.isAllValueEnterd(flag: false)
+        }
+    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        let point = CGPoint(x: textField.bounds.maxX, y: textField.bounds.height / 2)
+        if let textPosition = textField.closestPosition(to: point) {
+            textField.selectedTextRange = textField.textRange(from: textPosition, to: textPosition)
         }
     }
 }
