@@ -17,6 +17,10 @@
 		9E283E012BCCFA1F00F8E87A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E283DFF2BCCFA1F00F8E87A /* Main.storyboard */; };
 		9E283E032BCCFA2100F8E87A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E283E022BCCFA2100F8E87A /* Assets.xcassets */; };
 		9E283E062BCCFA2100F8E87A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E283E042BCCFA2100F8E87A /* LaunchScreen.storyboard */; };
+		9E4944632C118A99006F90EF /* CaptchaSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4944622C118A99006F90EF /* CaptchaSwiftViewController.swift */; };
+		9E700F7E2C00532100FECEBD /* PageViewMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E700F7C2C00532100FECEBD /* PageViewMenuViewController.swift */; };
+		9E700F7F2C00532100FECEBD /* PageViewMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E700F7D2C00532100FECEBD /* PageViewMenuViewController.xib */; };
+		9E700F812C00542500FECEBD /* MenuCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E700F802C00542500FECEBD /* MenuCollectionCell.xib */; };
 		9E9151722BEDE65D00ACBC7D /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9151702BEDE65D00ACBC7D /* NewViewController.swift */; };
 		9E9151732BEDE65D00ACBC7D /* NewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9151712BEDE65D00ACBC7D /* NewViewController.xib */; };
 		9E9151752BEE08B900ACBC7D /* TextFieldNumberCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9151742BEE08B900ACBC7D /* TextFieldNumberCustom.swift */; };
@@ -24,6 +28,8 @@
 		9E91517A2BEE3D0400ACBC7D /* AdvertiseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9151782BEE3D0400ACBC7D /* AdvertiseViewController.xib */; };
 		9E9151812BF1E8FC00ACBC7D /* AdvertisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9151802BF1E8FC00ACBC7D /* AdvertisingView.swift */; };
 		9E9151832BF1E92100ACBC7D /* AdvertisingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9151822BF1E92100ACBC7D /* AdvertisingView.xib */; };
+		9EE1F6CC2C80A9C5002215A4 /* CustomWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1F6CA2C80A9C5002215A4 /* CustomWebViewViewController.swift */; };
+		9EE1F6CD2C80A9C5002215A4 /* CustomWebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1F6CB2C80A9C5002215A4 /* CustomWebViewViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,10 @@
 		9E283E022BCCFA2100F8E87A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E283E052BCCFA2100F8E87A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E283E072BCCFA2100F8E87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E4944622C118A99006F90EF /* CaptchaSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaSwiftViewController.swift; sourceTree = "<group>"; };
+		9E700F7C2C00532100FECEBD /* PageViewMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewMenuViewController.swift; sourceTree = "<group>"; };
+		9E700F7D2C00532100FECEBD /* PageViewMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageViewMenuViewController.xib; sourceTree = "<group>"; };
+		9E700F802C00542500FECEBD /* MenuCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionCell.xib; sourceTree = "<group>"; };
 		9E9151702BEDE65D00ACBC7D /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		9E9151712BEDE65D00ACBC7D /* NewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewViewController.xib; sourceTree = "<group>"; };
 		9E9151742BEE08B900ACBC7D /* TextFieldNumberCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldNumberCustom.swift; sourceTree = "<group>"; };
@@ -46,6 +56,8 @@
 		9E9151782BEE3D0400ACBC7D /* AdvertiseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertiseViewController.xib; sourceTree = "<group>"; };
 		9E9151802BF1E8FC00ACBC7D /* AdvertisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisingView.swift; sourceTree = "<group>"; };
 		9E9151822BF1E92100ACBC7D /* AdvertisingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertisingView.xib; sourceTree = "<group>"; };
+		9EE1F6CA2C80A9C5002215A4 /* CustomWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebViewViewController.swift; sourceTree = "<group>"; };
+		9EE1F6CB2C80A9C5002215A4 /* CustomWebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomWebViewViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,8 @@
 		9E283DED2BCCFA1E00F8E87A = {
 			isa = PBXGroup;
 			children = (
+				9EE1F6CA2C80A9C5002215A4 /* CustomWebViewViewController.swift */,
+				9EE1F6CB2C80A9C5002215A4 /* CustomWebViewViewController.xib */,
 				9E283DF82BCCFA1F00F8E87A /* WebViewTestJS */,
 				9E283DF72BCCFA1F00F8E87A /* Products */,
 			);
@@ -87,6 +101,7 @@
 		9E283DF82BCCFA1F00F8E87A /* WebViewTestJS */ = {
 			isa = PBXGroup;
 			children = (
+				9E700F792C00525200FECEBD /* PageViewController */,
 				9E9151762BEE3CE800ACBC7D /* AdvertiseScreen */,
 				9E91516F2BEDE63B00ACBC7D /* OTP Like Field */,
 				9E283DF92BCCFA1F00F8E87A /* AppDelegate.swift */,
@@ -97,8 +112,19 @@
 				9E283E042BCCFA2100F8E87A /* LaunchScreen.storyboard */,
 				9E283E072BCCFA2100F8E87A /* Info.plist */,
 				9E1C1F082BE39EA6005C333F /* WebViewController.swift */,
+				9E4944622C118A99006F90EF /* CaptchaSwiftViewController.swift */,
 			);
 			path = WebViewTestJS;
+			sourceTree = "<group>";
+		};
+		9E700F792C00525200FECEBD /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9E700F7C2C00532100FECEBD /* PageViewMenuViewController.swift */,
+				9E700F7D2C00532100FECEBD /* PageViewMenuViewController.xib */,
+				9E700F802C00542500FECEBD /* MenuCollectionCell.xib */,
+			);
+			path = PageViewController;
 			sourceTree = "<group>";
 		};
 		9E91516F2BEDE63B00ACBC7D /* OTP Like Field */ = {
@@ -183,10 +209,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E283E062BCCFA2100F8E87A /* LaunchScreen.storyboard in Resources */,
+				9EE1F6CD2C80A9C5002215A4 /* CustomWebViewViewController.xib in Resources */,
 				9E283E032BCCFA2100F8E87A /* Assets.xcassets in Resources */,
 				9E91517A2BEE3D0400ACBC7D /* AdvertiseViewController.xib in Resources */,
+				9E700F7F2C00532100FECEBD /* PageViewMenuViewController.xib in Resources */,
 				9E0A87AF2BF6078A004DDFA0 /* AddAdvertiseCollectionViewCell.xib in Resources */,
 				9E283E012BCCFA1F00F8E87A /* Main.storyboard in Resources */,
+				9E700F812C00542500FECEBD /* MenuCollectionCell.xib in Resources */,
 				9E9151732BEDE65D00ACBC7D /* NewViewController.xib in Resources */,
 				9E9151832BF1E92100ACBC7D /* AdvertisingView.xib in Resources */,
 			);
@@ -205,6 +234,9 @@
 				9E9151722BEDE65D00ACBC7D /* NewViewController.swift in Sources */,
 				9E0A87AB2BF60513004DDFA0 /* AddAdvertiseView.swift in Sources */,
 				9E9151792BEE3D0400ACBC7D /* AdvertiseViewController.swift in Sources */,
+				9EE1F6CC2C80A9C5002215A4 /* CustomWebViewViewController.swift in Sources */,
+				9E4944632C118A99006F90EF /* CaptchaSwiftViewController.swift in Sources */,
+				9E700F7E2C00532100FECEBD /* PageViewMenuViewController.swift in Sources */,
 				9E283DFC2BCCFA1F00F8E87A /* SceneDelegate.swift in Sources */,
 				9E9151812BF1E8FC00ACBC7D /* AdvertisingView.swift in Sources */,
 				9E0A87B02BF6078A004DDFA0 /* AddAdvertiseCollectionViewCell.swift in Sources */,

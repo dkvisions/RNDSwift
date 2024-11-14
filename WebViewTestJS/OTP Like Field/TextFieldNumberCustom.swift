@@ -7,6 +7,18 @@
 
 import UIKit
 
+
+
+///Take StackView in the storyboard and reference to the class with Leading or center top(Don't give width)
+///and then outlet to Class.
+///
+///Intialization->
+///let ontTexhObj = OneTextNumberTextField((textFieldStack: UIStackView, delegate: OneTextNumberTextFieldDelegate, numberOfField: 4)
+///ontTexhObj.stackViewTextField()
+///
+///For clear Text-->ontTexhObj.clearText()
+
+
 protocol OneTextNumberTextFieldDelegate: NSObject {
     func enteredAllValue(string: String)
     func isAllValueEnterd(flag: Bool)
