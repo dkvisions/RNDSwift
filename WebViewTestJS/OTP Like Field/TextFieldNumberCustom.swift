@@ -31,10 +31,11 @@ class OneTextNumberTextField: NSObject {
     private var numberOfField = 14
     private var textFieldWith = 25.0
     private var spacing = 2.0
+    private var fontSize = 12.0
     private var textFieldStack: UIStackView!
     
     
-    required init(textFieldStack: UIStackView, delegate: OneTextNumberTextFieldDelegate, numberOfField: Int = 14, textFieldWith: CGFloat = 25.0, spacing: CGFloat = 2.0) {
+    required init(textFieldStack: UIStackView, delegate: OneTextNumberTextFieldDelegate, numberOfField: Int = 14, textFieldWith: CGFloat = 25.0, spacing: CGFloat = 2.0, fontSize: CGFloat = 12.0) {
         self.textFieldStack = textFieldStack
         self.oneTextNumberDelegate = delegate
         self.numberOfField = numberOfField
@@ -85,7 +86,7 @@ class OneTextNumberTextField: NSObject {
             textfield.keyboardType = .numberPad
             textfield.delegate = self
             textfield.textAlignment = .center
-            textfield.font = UIFont.systemFont(ofSize: 12)
+            textfield.font = UIFont.systemFont(ofSize: fontSize)
             textfield.layer.borderColor = UIColor.gray.cgColor
             textfield.layer.borderWidth = 0.5
             textfield.layer.cornerRadius = 4
