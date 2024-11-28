@@ -16,6 +16,8 @@
 		9E0A87AB2BF60513004DDFA0 /* AddAdvertiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0A87AA2BF60513004DDFA0 /* AddAdvertiseView.swift */; };
 		9E0A87AF2BF6078A004DDFA0 /* AddAdvertiseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0A87AE2BF6078A004DDFA0 /* AddAdvertiseCollectionViewCell.xib */; };
 		9E0A87B02BF6078A004DDFA0 /* AddAdvertiseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0A87AD2BF6078A004DDFA0 /* AddAdvertiseCollectionViewCell.swift */; };
+		9E0C03832CF734C700A36B79 /* MyCoreModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E0C03812CF734C700A36B79 /* MyCoreModel.xcdatamodeld */; };
+		9E0C03862CF73AFB00A36B79 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0C03852CF73AFB00A36B79 /* CoreDataHelper.swift */; };
 		9E1C1F092BE39EA6005C333F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1C1F082BE39EA6005C333F /* WebViewController.swift */; };
 		9E283DFA2BCCFA1F00F8E87A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E283DF92BCCFA1F00F8E87A /* AppDelegate.swift */; };
 		9E283DFC2BCCFA1F00F8E87A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E283DFB2BCCFA1F00F8E87A /* SceneDelegate.swift */; };
@@ -52,6 +54,9 @@
 		9E0A87AA2BF60513004DDFA0 /* AddAdvertiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAdvertiseView.swift; sourceTree = "<group>"; };
 		9E0A87AD2BF6078A004DDFA0 /* AddAdvertiseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAdvertiseCollectionViewCell.swift; sourceTree = "<group>"; };
 		9E0A87AE2BF6078A004DDFA0 /* AddAdvertiseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAdvertiseCollectionViewCell.xib; sourceTree = "<group>"; };
+		9E0C03822CF734C700A36B79 /* MyCoreModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCoreModel.xcdatamodel; sourceTree = "<group>"; };
+		9E0C03842CF7357B00A36B79 /* CoreData--ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "CoreData--ReadMe.md"; sourceTree = "<group>"; };
+		9E0C03852CF73AFB00A36B79 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		9E1C1F082BE39EA6005C333F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9E283DF62BCCFA1F00F8E87A /* WebViewTestJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewTestJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E283DF92BCCFA1F00F8E87A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +134,16 @@
 			path = CellCollection;
 			sourceTree = "<group>";
 		};
+		9E0C03802CF734A400A36B79 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9E0C03812CF734C700A36B79 /* MyCoreModel.xcdatamodeld */,
+				9E0C03842CF7357B00A36B79 /* CoreData--ReadMe.md */,
+				9E0C03852CF73AFB00A36B79 /* CoreDataHelper.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		9E283DED2BCCFA1E00F8E87A = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +165,7 @@
 		9E283DF82BCCFA1F00F8E87A /* WebViewTestJS */ = {
 			isa = PBXGroup;
 			children = (
+				9E0C03802CF734A400A36B79 /* CoreData */,
 				9EB8EF972CE5FEE90044F2BA /* For PDF */,
 				9E75CE2D2CD384A400CC1E69 /* Chat360 */,
 				9E0554632CC63982000C34EA /* CustomFeedBack */,
@@ -308,6 +324,8 @@
 				9E9151722BEDE65D00ACBC7D /* NewViewController.swift in Sources */,
 				9E0554652CC639A5000C34EA /* CustomFeedbackRevampModel.swift in Sources */,
 				9E05546B2CC63DED000C34EA /* QuestionsOptionsViewController.swift in Sources */,
+				9E0C03832CF734C700A36B79 /* MyCoreModel.xcdatamodeld in Sources */,
+				9E0C03862CF73AFB00A36B79 /* CoreDataHelper.swift in Sources */,
 				9E0A87AB2BF60513004DDFA0 /* AddAdvertiseView.swift in Sources */,
 				9E9151792BEE3D0400ACBC7D /* AdvertiseViewController.swift in Sources */,
 				9EE1F6CC2C80A9C5002215A4 /* CustomWebViewViewController.swift in Sources */,
@@ -542,6 +560,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9E0C03812CF734C700A36B79 /* MyCoreModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9E0C03822CF734C700A36B79 /* MyCoreModel.xcdatamodel */,
+			);
+			currentVersion = 9E0C03822CF734C700A36B79 /* MyCoreModel.xcdatamodel */;
+			name = MyCoreModel.xcdatamodeld;
+			path = /Users/wyh_ios/Desktop/WebViewTestJS/WebViewTestJS/CoreData/MyCoreModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9E283DEE2BCCFA1E00F8E87A /* Project object */;
 }

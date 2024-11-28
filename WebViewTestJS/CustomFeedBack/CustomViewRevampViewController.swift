@@ -11,19 +11,32 @@ class CustomViewRevampViewController: UIViewController {
 
     let customRespo = getReponseCustomFeedBack()
     
+    
+    
+    let shared = CoreDataHelper.shared
+    
+   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        
+//        for i in customRespo?.customFeedback ?? [] {
+//            
+//            
+//            print("i in \(i.type ?? "-")")
+//        }
+//        
+//        
+//        shared.saveData()
+    
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        for i in customRespo?.customFeedback ?? [] {
-            
-            
-            print("i in \(i.type ?? "-")")
-        }
-        
-        
-       
-        
+        shared.fetchData()
     }
     @IBAction func navigateButton(_ sender: Any) {
         

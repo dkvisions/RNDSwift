@@ -10,9 +10,12 @@ import WebKit
 
 class CustomWebViewViewController: UIViewController {
 
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
+     
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,13 +24,13 @@ class CustomWebViewViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        
-        let config = WKWebViewConfiguration()
-        config.allowsInlineMediaPlayback = true
-        let web = WKWebView(frame: self.view.bounds, configuration: config)
-        
-    
-        self.view.addSubview(web)
+     
+//        let config = WKWebViewConfiguration()
+//        config.allowsInlineMediaPlayback = true
+//        let web = WKWebView(frame: self.view.bounds, configuration: config)
+//        
+//    
+//        self.view.addSubview(web)
         
     }
 }
