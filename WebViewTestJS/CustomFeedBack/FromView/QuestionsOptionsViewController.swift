@@ -335,10 +335,10 @@ extension QuestionsOptionsViewController: UITableViewDelegate, UITableViewDataSo
 //        cell.viewContainer.layer.borderColor = isAnsHave ? UIColor().darkBlueColor.cgColor : UIColor.black.cgColor
 //        cell.viewContainer.layer.borderWidth = isAnsHave ? 1.5
 //        : 0.2
-        
+//        
 //        cell.labelOptions.textColor = isAnsHave ? .white : .black
-        
-        
+//        
+//        
 //        cell.optionsData = data.option?[indexPath.row]
         return cell
     }

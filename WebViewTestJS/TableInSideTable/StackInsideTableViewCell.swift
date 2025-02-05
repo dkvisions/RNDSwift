@@ -9,6 +9,8 @@ import UIKit
 
 class StackInsideTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var viewConatainer: UIView!
+    @IBOutlet weak var buttonHideShow: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -1,12 +1,11 @@
 //
 //  TextFieldNumberCustom.swift
-//  WebViewTestJS
+//  SwiftHelpers
 //
 //  Created by Rahul Vishwakarma  on 10/05/24.
 //
 
 import UIKit
-
 
 
 ///Take StackView in the storyboard and reference to the class with Leading or center top(Don't give width)
@@ -17,7 +16,6 @@ import UIKit
 ///ontTexhObj.stackViewTextField()
 ///
 ///For clear Text-->ontTexhObj.clearText()
-
 
 protocol OneTextNumberTextFieldDelegate: NSObject {
     func enteredAllValue(string: String)
@@ -32,15 +30,17 @@ class OneTextNumberTextField: NSObject {
     private var textFieldWith = 25.0
     private var spacing = 2.0
     private var fontSize = 12.0
+    private var isSecureTextEntry = false
     private var textFieldStack: UIStackView!
     
     
-    required init(textFieldStack: UIStackView, delegate: OneTextNumberTextFieldDelegate, numberOfField: Int = 14, textFieldWith: CGFloat = 25.0, spacing: CGFloat = 2.0, fontSize: CGFloat = 12.0) {
+    required init(textFieldStack: UIStackView, delegate: OneTextNumberTextFieldDelegate, numberOfField: Int = 14, textFieldWith: CGFloat = 25.0, spacing: CGFloat = 2.0, fontSize: CGFloat = 12.0, isSecureTextEntry: Bool = false) {
         self.textFieldStack = textFieldStack
         self.oneTextNumberDelegate = delegate
         self.numberOfField = numberOfField
         self.spacing = spacing
         self.textFieldWith = textFieldWith
+        self.isSecureTextEntry = isSecureTextEntry
 
     }
     
@@ -91,6 +91,7 @@ class OneTextNumberTextField: NSObject {
             textfield.layer.borderWidth = 0.5
             textfield.layer.cornerRadius = 4
             textfield.clipsToBounds = true
+            textfield.isSecureTextEntry = isSecureTextEntry
             textFieldStack.addArrangedSubview(textfield)
         }
         

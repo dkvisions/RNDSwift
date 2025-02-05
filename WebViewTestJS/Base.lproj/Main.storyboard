@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,6 +45,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AgE-m4-xcl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2559.5419847328244" y="69.718309859154928"/>
+        </scene>
+        <!--Stack Inside View Controller-->
+        <scene sceneID="duf-xW-uvx">
+            <objects>
+                <viewController storyboardIdentifier="StackInsideViewController" id="nZG-ve-fit" customClass="StackInsideViewController" customModule="WebViewTestJS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n81-g0-JHu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4JS-ge-oF7">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WrV-jV-0hY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4JS-ge-oF7" firstAttribute="top" secondItem="WrV-jV-0hY" secondAttribute="top" id="9FI-zd-Kpf"/>
+                            <constraint firstItem="WrV-jV-0hY" firstAttribute="trailing" secondItem="4JS-ge-oF7" secondAttribute="trailing" id="cdH-RF-9Xa"/>
+                            <constraint firstItem="WrV-jV-0hY" firstAttribute="bottom" secondItem="4JS-ge-oF7" secondAttribute="bottom" id="k4c-1w-hyd"/>
+                            <constraint firstItem="4JS-ge-oF7" firstAttribute="leading" secondItem="WrV-jV-0hY" secondAttribute="leading" id="y6z-7E-y3Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewContent" destination="4JS-ge-oF7" id="EBd-r4-8Tf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNF-NS-JMi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3072" y="1019"/>
+        </scene>
+        <!--Collection Header Label Gradient-->
+        <scene sceneID="u7i-Hc-QnV">
+            <objects>
+                <viewController storyboardIdentifier="CollectionHeaderLabelGradient" id="2Mb-GP-Crc" customClass="CollectionHeaderLabelGradient" customModule="WebViewTestJS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ns6-YC-SRr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HWC-ho-s2b">
+                                <rect key="frame" x="0.0" y="259" width="393" height="559"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o32-aV-EI3">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="l59-xi-D8K">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g30-Gp-5ZP">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazon Voucher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5F-1h-fEW">
+                                <rect key="frame" x="37" y="109.00000000000001" width="319" height="52.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hWH-2X-Yrd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hWH-2X-Yrd" firstAttribute="trailing" secondItem="HWC-ho-s2b" secondAttribute="trailing" id="B4g-Jl-u17"/>
+                            <constraint firstItem="T5F-1h-fEW" firstAttribute="top" secondItem="hWH-2X-Yrd" secondAttribute="top" constant="50" id="KKu-5H-mam"/>
+                            <constraint firstItem="hWH-2X-Yrd" firstAttribute="bottom" secondItem="HWC-ho-s2b" secondAttribute="bottom" id="VTA-3s-qQD"/>
+                            <constraint firstItem="T5F-1h-fEW" firstAttribute="centerX" secondItem="ns6-YC-SRr" secondAttribute="centerX" id="gKr-jM-vLe"/>
+                            <constraint firstItem="HWC-ho-s2b" firstAttribute="top" secondItem="hWH-2X-Yrd" secondAttribute="top" constant="200" id="kXc-P5-is9"/>
+                            <constraint firstItem="HWC-ho-s2b" firstAttribute="leading" secondItem="hWH-2X-Yrd" secondAttribute="leading" id="vDQ-5u-dOh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionForeader" destination="HWC-ho-s2b" id="Gse-Cz-5CT"/>
+                        <outlet property="labelVoucher" destination="T5F-1h-fEW" id="z5Q-SA-RSa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dP-tb-0Hi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1409" y="1050"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DBG-n0-NKe">
@@ -366,7 +452,7 @@
         <!--Pdf Creator View Controller-->
         <scene sceneID="MHR-gx-MMy">
             <objects>
-                <viewController storyboardIdentifier="PdfCreatorViewController" id="wBP-M4-ddf" customClass="PdfCreatorViewController" customModule="MyNewProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PdfCreatorViewController" id="wBP-M4-ddf" customClass="PdfCreatorViewController" customModule="WebViewTestJS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QLA-qV-eZA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -375,7 +461,7 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCellForPdf" rowHeight="245" id="ojF-Sk-VQn" customClass="TableCellForPdf" customModule="MyNewProject" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCellForPdf" rowHeight="245" id="ojF-Sk-VQn" customClass="TableCellForPdf" customModule="WebViewTestJS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="245"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ojF-Sk-VQn" id="IFr-Ml-w1I">
@@ -436,19 +522,19 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
