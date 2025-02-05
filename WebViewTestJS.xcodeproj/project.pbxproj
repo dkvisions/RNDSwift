@@ -29,6 +29,7 @@
 		9E283E032BCCFA2100F8E87A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E283E022BCCFA2100F8E87A /* Assets.xcassets */; };
 		9E283E062BCCFA2100F8E87A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E283E042BCCFA2100F8E87A /* LaunchScreen.storyboard */; };
 		9E4944632C118A99006F90EF /* CaptchaSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4944622C118A99006F90EF /* CaptchaSwiftViewController.swift */; };
+		9E5FBB092D534215003A05EC /* VersionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5FBB082D534215003A05EC /* VersionManager.swift */; };
 		9E6334922CE5FF2C00AA1FB8 /* PdfCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6334912CE5FF2C00AA1FB8 /* PdfCreatorViewController.swift */; };
 		9E700F7E2C00532100FECEBD /* PageViewMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E700F7C2C00532100FECEBD /* PageViewMenuViewController.swift */; };
 		9E700F7F2C00532100FECEBD /* PageViewMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E700F7D2C00532100FECEBD /* PageViewMenuViewController.xib */; };
@@ -74,6 +75,7 @@
 		9E283E052BCCFA2100F8E87A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E283E072BCCFA2100F8E87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E4944622C118A99006F90EF /* CaptchaSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaSwiftViewController.swift; sourceTree = "<group>"; };
+		9E5FBB082D534215003A05EC /* VersionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionManager.swift; sourceTree = "<group>"; };
 		9E6334912CE5FF2C00AA1FB8 /* PdfCreatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfCreatorViewController.swift; sourceTree = "<group>"; };
 		9E700F7C2C00532100FECEBD /* PageViewMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewMenuViewController.swift; sourceTree = "<group>"; };
 		9E700F7D2C00532100FECEBD /* PageViewMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageViewMenuViewController.xib; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		9E283DF82BCCFA1F00F8E87A /* WebViewTestJS */ = {
 			isa = PBXGroup;
 			children = (
+				9E5FBB072D534202003A05EC /* Version Controll */,
 				9E0130202D27FA4B00C93154 /* TableInSideTable */,
 				9EBF5B172D1EB2F400983789 /* Collection Header n Label Gradient */,
 				9E0C03802CF734A400A36B79 /* CoreData */,
@@ -203,6 +206,14 @@
 				9E4944622C118A99006F90EF /* CaptchaSwiftViewController.swift */,
 			);
 			path = WebViewTestJS;
+			sourceTree = "<group>";
+		};
+		9E5FBB072D534202003A05EC /* Version Controll */ = {
+			isa = PBXGroup;
+			children = (
+				9E5FBB082D534215003A05EC /* VersionManager.swift */,
+			);
+			path = "Version Controll";
 			sourceTree = "<group>";
 		};
 		9E700F792C00525200FECEBD /* PageViewController */ = {
@@ -354,6 +365,7 @@
 				9E9151722BEDE65D00ACBC7D /* NewViewController.swift in Sources */,
 				9E0554652CC639A5000C34EA /* CustomFeedbackRevampModel.swift in Sources */,
 				9E05546B2CC63DED000C34EA /* QuestionsOptionsViewController.swift in Sources */,
+				9E5FBB092D534215003A05EC /* VersionManager.swift in Sources */,
 				9E0C03832CF734C700A36B79 /* MyCoreModel.xcdatamodeld in Sources */,
 				9E0C03862CF73AFB00A36B79 /* CoreDataHelper.swift in Sources */,
 				9E0A87AB2BF60513004DDFA0 /* AddAdvertiseView.swift in Sources */,
